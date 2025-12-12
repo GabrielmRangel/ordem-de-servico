@@ -80,13 +80,13 @@
         
 
         <label>Cliente:</label>
-        <input type="text" id="clienteNome" oninput="document.getElementById('textoConclusao').innerText = 'Eu, ' + this.value + ' declaro que o serviço foi entregue e não há pendências.'" type="text" />
+        <input placeholder="Nome do cliente" type="text" id="clienteNome" oninput="document.getElementById('textoConclusao').innerText = 'Eu, ' + this.value + ', declaro que o serviço foi entregue e não há pendências.'" type="text" />
 
         <label>Empresa:</label>
-        <input type="text" />
+        <input placeholder="Nome da empresa" type="text" />
 
-        <label>Responsável:</label>
-        <input type="text" />
+        <label>Técnico esponsável:</label>
+        <input placeholder="Nome do técnico" type="text" />
 
         <label>Data:</label>
         <input type="date" />
@@ -95,7 +95,7 @@
         <textarea placeholder="Insira o serviço prestado"></textarea>
 
         <label>Declaração de Conclusão:</label>
-        <p id="textoConclusao" style="margin-top:8px; font-size:15px; color:#333;">Eu, ___ declaro que o serviço foi entregue e não há pendências.</p>
+        <p id="textoConclusao" style="margin-top:8px; font-size:15px; color:#333;">Eu, ___, declaro que o serviço foi entregue e não há pendências.</p>
 
         <!-- Removidas assinaturas e datas finais conforme solicitado -->
 
@@ -103,4 +103,5 @@
     </div>
 </body>
 </html>
+
 
